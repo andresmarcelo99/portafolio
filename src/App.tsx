@@ -11,7 +11,7 @@ function App() {
               <i className="fa fa-times" id="menu-close"></i>
               <div className="container">
                 <div className="image">
-                  <a href="#">
+                  <a href="/">
                     <img src="assets/images/author-image.jpg" alt="" />
                   </a>
                 </div>
@@ -38,12 +38,12 @@ function App() {
                 <div className="social-network">
                   <ul className="soial-icons">
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/marcelo-garcia-01b5a2206/">
                         <i className="fa fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://github.com/andresmarcelo99/">
                         <i className="fa fa-github"></i>
                       </a>
                     </li>
