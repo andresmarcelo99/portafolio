@@ -59,9 +59,10 @@ function App() {
                 <h2>About Me</h2>
                 <div className="line-dec"></div>
                 <span>
-                  This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-                  this layout for your site. Updated on 21 May 2019 for repeated
-                  main menu HTML code.
+                  Software Developer who's passion is music, coding and guitar.
+                  Always focused on improving and willing to learn. I seek to
+                  acquire knowledge and work skills that will make me a great
+                  professional.
                 </span>
               </div>
               {/* <div className="left-image-post">
@@ -118,7 +119,7 @@ function App() {
           <section className="section my-services" data-section="section2">
             <div className="container">
               <div className="section-heading">
-                <h2>What I’m good at?</h2>
+                <h2>Skills</h2>
                 <div className="line-dec"></div>
                 <span>
                   Curabitur leo felis, rutrum vitae varius eu, malesuada a
@@ -129,38 +130,48 @@ function App() {
               <div className="row">
                 <div className="col-md-6">
                   <div className="service-item">
-                    <div className="first-service-icon service-icon"></div>
-                    <h4>HTML5 &amp; CSS3</h4>
-                    <p>
-                      Phasellus non convallis dolor. Integer tempor hendrerit
-                      arcu at bibendum. Sed ac ante non metus vehicula congue
-                      quis eget eros.
-                    </p>
+                    <div className="second-service-icon service-icon"></div>
+                    <h4>Front End</h4>
+                    <ul className="container float">
+                      <li className="item float-item">JavaScript</li>
+                      <li className="item float-item">ReactJs</li>
+                      <li className="item float-item">AngularJs</li>
+                      <li className="item float-item">SASS</li>
+                      <li className="item float-item">jQuery</li>
+                      <li className="item float-item">ES6</li>
+                      <li className="item float-item">HTML/CSS</li>
+                    </ul>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="service-item">
                     <div className="second-service-icon service-icon"></div>
-                    <h4>Creative Ideas</h4>
-                    <p>
-                      Proin lacus massa, eleifend sed fermentum in, dignissim
-                      vel metus. Nunc accumsan leo nec felis porttitor,
-                      ultricies faucibus purus mollis.
-                    </p>
+                    <h4>Back End</h4>
+                    <ul className="container float">
+                      <li className="item float-item">NodeJS</li>
+                      <li className="item float-item">.Net Framework</li>
+                      <li className="item float-item">ExpressJS</li>
+                      <li className="item float-item">NestJS</li>
+                    </ul>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="service-item">
                     <div className="third-service-icon service-icon"></div>
-                    <h4>Easy Customize</h4>
-                    <p>
-                      Integer suscipit condimentum aliquet. Nam quis risus
-                      metus. Nullam faucibus quam eget arcu pretium tincidunt.
-                      Nam libero dui.
-                    </p>
+                    <h4>Tools</h4>
+                    <ul className="container float">
+                      <li className="item float-item">Git</li>
+                      <li className="item float-item">Docker</li>
+                      <li className="item float-item">AWS</li>
+                      <li className="item float-item">Google Analytics Api</li>
+                      <li className="item float-item">Jest, xUnit</li>
+                      <li className="item float-item">Microsoft SQL Server</li>
+                      <li className="item float-item">Postgresql</li>
+                      <li className="item float-item">Mongodb</li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                   <div className="service-item">
                     <div className="fourth-service-icon service-icon"></div>
                     <h4>Admin Dashboard</h4>
@@ -170,7 +181,7 @@ function App() {
                       Nunc accumsan leo nec felis porttitor.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
