@@ -148,6 +148,7 @@ function App() {
                             data-lightbox="image-1"
                             data-title="Caption"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             <i className="fa fa-search"></i>
                           </a>
@@ -168,6 +169,7 @@ function App() {
                             data-lightbox="image-1"
                             data-title="Caption"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             <i className="fa fa-search"></i>
                           </a>
