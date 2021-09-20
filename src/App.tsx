@@ -1,8 +1,8 @@
+import { scrollTo } from './utils/utilityFunctions';
+
 function App() {
   return (
     <div className="App">
-      {/* <header>
-      </header> */}
       <body>
         <div id="page-wraper">
           <div className="responsive-nav">
@@ -22,28 +22,47 @@ function App() {
                 <nav className="main-nav" role="navigation">
                   <ul className="main-menu">
                     <li>
-                      <a href="#section1">About Me</a>
+                      <a href="#section1" onClick={() => scrollTo('about-me')}>
+                        About Me
+                      </a>
                     </li>
                     <li>
-                      <a href="#section2">What I’m good at</a>
+                      <a href="#section2" onClick={() => scrollTo('skills')}>
+                        What I’m good at
+                      </a>
                     </li>
                     <li>
-                      <a href="#section3">My Work</a>
+                      <a href="#section3" onClick={() => scrollTo('my-work')}>
+                        My Work
+                      </a>
                     </li>
                     <li>
-                      <a href="#section4">Contact Me</a>
+                      <a
+                        href="#section4"
+                        onClick={() => scrollTo('contact-me')}
+                      >
+                        Contact Me
+                      </a>
                     </li>
                   </ul>
                 </nav>
                 <div className="social-network">
                   <ul className="soial-icons">
                     <li>
-                      <a href="https://www.linkedin.com/in/marcelo-garcia-01b5a2206/">
+                      <a
+                        href="https://www.linkedin.com/in/marcelo-garcia-01b5a2206/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="fa fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/andresmarcelo99/">
+                      <a
+                        href="https://github.com/andresmarcelo99/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="fa fa-github"></i>
                       </a>
                     </li>
@@ -53,7 +72,11 @@ function App() {
             </div>
           </div>
 
-          <section className="section about-me" data-section="section1">
+          <section
+            className="section about-me"
+            data-section="section1"
+            id="about-me"
+          >
             <div className="container">
               <div className="section-heading">
                 <h2>About Me</h2>
@@ -68,7 +91,11 @@ function App() {
             </div>
           </section>
 
-          <section className="section my-services" data-section="section2">
+          <section
+            className="section my-services"
+            data-section="section2"
+            id="skills"
+          >
             <div className="container">
               <div className="section-heading pb-40">
                 <h2>Skills</h2>
@@ -122,7 +149,11 @@ function App() {
             </div>
           </section>
 
-          <section className="section my-work" data-section="section3">
+          <section
+            className="section my-work"
+            data-section="section3"
+            id="my-work"
+          >
             <div className="container">
               <div className="section-heading">
                 <h2>My Work</h2>
@@ -137,45 +168,43 @@ function App() {
                 <div className="isotope-wrapper">
                   <div className="isotope-box">
                     <div className="isotope-item" data-type="nature">
-                      <figure className="snip1321">
-                        <img
-                          src="assets/images/ibm-pt-home.png"
-                          alt="IBM Price Transparecy"
-                        />
-                        <figcaption>
-                          <a
-                            href="https://www.ibmpricetransparency.com/330399"
-                            data-lightbox="image-1"
-                            data-title="Caption"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <i className="fa fa-search"></i>
-                          </a>
-                          <h4>IBM Price Transparecy</h4>
-                        </figcaption>
-                      </figure>
+                      <a
+                        href="https://www.ibmpricetransparency.com/330399"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <figure className="snip1321">
+                          <img
+                            src="assets/images/ibm-pt-home.png"
+                            alt="IBM Price Transparecy"
+                          />
+                          <figcaption>
+                            <h4>IBM Price Transparecy</h4>
+                          </figcaption>
+                        </figure>
+                      </a>
                     </div>
 
                     <div className="isotope-item" data-type="people">
-                      <figure className="snip1321">
-                        <img
-                          src="assets/images/pitches.png"
-                          alt="BGV Raisify"
-                        />
-                        <figcaption>
-                          <a
-                            href="https://raisify.co/"
-                            data-lightbox="image-1"
-                            data-title="Caption"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <i className="fa fa-search"></i>
-                          </a>
-                          <h4>BGV Raisify</h4>
-                        </figcaption>
-                      </figure>
+                      <a
+                        href="https://raisify.co/"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <figure className="snip1321">
+                          <img
+                            src="assets/images/pitches.png"
+                            alt="BGV Raisify"
+                          />
+                          <figcaption>
+                            <h4>BGV Raisify</h4>
+                          </figcaption>
+                        </figure>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -183,16 +212,15 @@ function App() {
             </div>
           </section>
 
-          <section className="section contact-me" data-section="section4">
+          <section
+            className="section contact-me"
+            data-section="section4"
+            id="contact-me"
+          >
             <div className="container">
               <div className="section-heading">
                 <h2>Contact Me</h2>
                 <div className="line-dec"></div>
-                {/* <span>
-                  Fusce eget nibh nec justo interdum condimentum. Morbi justo
-                  ex, efficitur at ante ac, tincidunt maximus ligula. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.
-                </span> */}
               </div>
               <div className="row">
                 <div className="right-content">
