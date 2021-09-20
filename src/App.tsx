@@ -59,73 +59,20 @@ function App() {
                 <h2>About Me</h2>
                 <div className="line-dec"></div>
                 <span>
-                  Software Developer who's passion is music, coding and guitar.
-                  Always focused on improving and willing to learn. I seek to
-                  acquire knowledge and work skills that will make me a great
-                  professional.
+                  Proficient Full Stack Developer who lifts and plays guitar in
+                  his free time and absolutely loves challenges, especially
+                  coding ones. Experience working with agile teams and over
+                  delivering on client's expectations.
                 </span>
               </div>
-              {/* <div className="left-image-post">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="left-image">
-                      <img src="assets/images/left-image.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="right-text">
-                      <h4>Reflux HTML CSS Template</h4>
-                      <p>
-                        Donec tristique feugiat lacus, at sollicitudin nunc
-                        euismod sed. Mauris viverra, erat non sagittis gravida,
-                        elit dui mollis ante, sit amet eleifend purus ligula
-                        eget eros. Sed tincidunt quam vitae neque pharetra
-                        dignissim eget ut libero.
-                      </p>
-                      <div className="white-button">
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-              {/* <div className="right-image-post">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="left-text">
-                      <h4>Sed sagittis rhoncus velit</h4>
-                      <p>
-                        Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas. Vestibulum
-                        fermentum eleifend nibh, vitae sodales elit finibus
-                        pretium. Suspendisse potenti. Ut sollicitudin risus a
-                        sollicitudin semper.
-                      </p>
-                      <div className="white-button">
-                        <a href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="right-image">
-                      <img src="assets/images/right-image.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </section>
 
           <section className="section my-services" data-section="section2">
             <div className="container">
-              <div className="section-heading">
+              <div className="section-heading pb-40">
                 <h2>Skills</h2>
                 <div className="line-dec"></div>
-                <span>
-                  Curabitur leo felis, rutrum vitae varius eu, malesuada a
-                  tortor. Vestibulum congue leo et tellus aliquam, eu viverra
-                  nulla semper. Nullam eu faucibus diam. Donec eget massa ante.
-                </span>
               </div>
               <div className="row">
                 <div className="col-md-6">
@@ -171,17 +118,6 @@ function App() {
                     </ul>
                   </div>
                 </div>
-                {/* <div className="col-md-6">
-                  <div className="service-item">
-                    <div className="fourth-service-icon service-icon"></div>
-                    <h4>Admin Dashboard</h4>
-                    <p>
-                      Vivamus et dui a massa venenatis fringilla. Proin lacus
-                      massa, eleifend sed fermentum in, dignissim vel metus.
-                      Nunc accumsan leo nec felis porttitor.
-                    </p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </section>
@@ -192,9 +128,9 @@ function App() {
                 <h2>My Work</h2>
                 <div className="line-dec"></div>
                 <span>
-                  Aenean sollicitudin ex mauris, lobortis lobortis diam euismod
-                  sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-                  mauris.
+                  These are several projects I've worked on. Using technologies
+                  like React.js and Angular.js for the frontend and NestJs and
+                  Dot Net Core for the backend.
                 </span>
               </div>
               <div className="row">
@@ -203,19 +139,19 @@ function App() {
                     <div className="isotope-item" data-type="nature">
                       <figure className="snip1321">
                         <img
-                          src="assets/images/portfolio-01.jpg"
-                          alt="sq-sample26"
+                          src="assets/images/ibm-pt-home.png"
+                          alt="IBM Price Transparecy"
                         />
                         <figcaption>
                           <a
-                            href="assets/images/portfolio-01.jpg"
+                            href="https://www.ibmpricetransparency.com/330399"
                             data-lightbox="image-1"
                             data-title="Caption"
                           >
                             <i className="fa fa-search"></i>
                           </a>
-                          <h4>First Title</h4>
-                          <span>free to use our template</span>
+                          <h4>IBM Price Transparecy</h4>
+                          {/* <span>free to use our template</span> */}
                         </figcaption>
                       </figure>
                     </div>
@@ -223,19 +159,19 @@ function App() {
                     <div className="isotope-item" data-type="people">
                       <figure className="snip1321">
                         <img
-                          src="assets/images/portfolio-02.jpg"
-                          alt="sq-sample26"
+                          src="assets/images/pitches.png"
+                          alt="BGV Raisify"
                         />
                         <figcaption>
                           <a
-                            href="assets/images/portfolio-02.jpg"
+                            href="https://raisify.co/"
                             data-lightbox="image-1"
                             data-title="Caption"
                           >
                             <i className="fa fa-search"></i>
                           </a>
-                          <h4>Second Title</h4>
-                          <span>please tell your friends</span>
+                          <h4>BGV Raisify</h4>
+                          {/* <span>please tell your friends</span> */}
                         </figcaption>
                       </figure>
                     </div>
@@ -250,11 +186,11 @@ function App() {
               <div className="section-heading">
                 <h2>Contact Me</h2>
                 <div className="line-dec"></div>
-                <span>
+                {/* <span>
                   Fusce eget nibh nec justo interdum condimentum. Morbi justo
                   ex, efficitur at ante ac, tincidunt maximus ligula. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit.
-                </span>
+                </span> */}
               </div>
               <div className="row">
                 <div className="right-content">

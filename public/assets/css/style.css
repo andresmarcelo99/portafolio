@@ -293,7 +293,10 @@ html {
 
 .section-heading {
   text-align: center;
-  padding: 80px 45px;
+  padding-top: 80px;
+  padding-right: 45px;
+  padding-bottom: 80px;
+  padding-left: 45px;
 }
 
 .section-heading h2 {
@@ -601,6 +604,7 @@ figure.snip1321.hover:after {
 
 section.contact-me {
   border-bottom: none;
+  padding-bottom: 40px;
 }
 
 #contact input {
@@ -775,4 +779,11 @@ section.contact-me {
   .isotope-toolbar {
     margin-bottom: 20px;
   }
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
