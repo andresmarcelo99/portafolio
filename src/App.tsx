@@ -152,7 +152,6 @@ function App() {
                             <i className="fa fa-search"></i>
                           </a>
                           <h4>IBM Price Transparecy</h4>
-                          {/* <span>free to use our template</span> */}
                         </figcaption>
                       </figure>
                     </div>
@@ -173,7 +172,6 @@ function App() {
                             <i className="fa fa-search"></i>
                           </a>
                           <h4>BGV Raisify</h4>
-                          {/* <span>please tell your friends</span> */}
                         </figcaption>
                       </figure>
                     </div>
