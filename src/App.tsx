@@ -147,6 +147,7 @@ function App() {
                             href="https://www.ibmpricetransparency.com/330399"
                             data-lightbox="image-1"
                             data-title="Caption"
+                            target="_blank"
                           >
                             <i className="fa fa-search"></i>
                           </a>
@@ -167,6 +168,7 @@ function App() {
                             href="https://raisify.co/"
                             data-lightbox="image-1"
                             data-title="Caption"
+                            target="_blank"
                           >
                             <i className="fa fa-search"></i>
                           </a>
