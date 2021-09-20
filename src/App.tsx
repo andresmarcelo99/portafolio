@@ -129,7 +129,8 @@ function App() {
                       <li className="item float-item">Docker</li>
                       <li className="item float-item">AWS</li>
                       <li className="item float-item">Google Analytics Api</li>
-                      <li className="item float-item">Jest, xUnit</li>
+                      <li className="item float-item">Jest</li>
+                      <li className="item float-item">xUnit</li>
                       <li className="item float-item">Microsoft SQL Server</li>
                       <li className="item float-item">Postgresql</li>
                       <li className="item float-item">Mongodb</li>
@@ -173,6 +174,26 @@ function App() {
                           />
                           <figcaption>
                             <h4>IBM Price Transparecy</h4>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+
+                    <div className="isotope-item" data-type="nature">
+                      <a
+                        href="https://app.peeplo.io"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <figure className="snip1321">
+                          <img
+                            src="assets/images/admin-peeplo.jpg"
+                            alt="Peeplo"
+                          />
+                          <figcaption>
+                            <h4>Peeplo</h4>
                           </figcaption>
                         </figure>
                       </a>
