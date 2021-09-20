@@ -102,7 +102,7 @@ html {
   text-align: center;
 }
 
-.main-nav li:last-child a {
+.main-nav li:last-child span {
   border-bottom: 2px solid #fff;
 }
 
@@ -110,7 +110,7 @@ html {
   display: block;
 }
 
-.main-nav li a {
+.main-nav li span {
   height: 70px;
   line-height: 70px;
   display: inline-block;
@@ -120,10 +120,11 @@ html {
   width: 100%;
   transition: all 0.5s;
   border-top: 2px solid #fff;
+  cursor: pointer;
 }
 
-.main-nav li:hover a,
-.main-nav li.active a {
+.main-nav li:hover span,
+.main-nav li.active span {
   background: #fff;
   color: #9a8c98;
 }

@@ -22,27 +22,18 @@ function App() {
                 <nav className="main-nav" role="navigation">
                   <ul className="main-menu">
                     <li>
-                      <a href="#section1" onClick={() => scrollTo('about-me')}>
-                        About Me
-                      </a>
+                      <span onClick={() => scrollTo('about-me')}>About Me</span>
                     </li>
                     <li>
-                      <a href="#section2" onClick={() => scrollTo('skills')}>
-                        What I’m good at
-                      </a>
+                      <span onClick={() => scrollTo('skills')}>Skills</span>
                     </li>
                     <li>
-                      <a href="#section3" onClick={() => scrollTo('my-work')}>
-                        My Work
-                      </a>
+                      <span onClick={() => scrollTo('my-work')}>My Work</span>
                     </li>
                     <li>
-                      <a
-                        href="#section4"
-                        onClick={() => scrollTo('contact-me')}
-                      >
+                      <span onClick={() => scrollTo('contact-me')}>
                         Contact Me
-                      </a>
+                      </span>
                     </li>
                   </ul>
                 </nav>
