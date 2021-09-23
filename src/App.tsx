@@ -97,7 +97,13 @@ function App() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa fa-github"></i>
+                        <i className="fa fa-gitlab"></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="mailto: marcelo.andres99.ma@gmail.com">
+                        <i className="fa fa-envelope"></i>
                       </a>
                     </li>
                   </ul>
