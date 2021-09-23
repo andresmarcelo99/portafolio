@@ -1,11 +1,3 @@
-/*
-
-Reflux Template
-
-https://templatemo.com/tm-531-reflux
-
-*/
-
 @import url(fontawesome.css);
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 body {
@@ -250,12 +242,13 @@ html {
 }
 
 #menu-toggle {
+  /* display: none !important; */
   z-index: 999;
   cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;
-  color: #a43f49;
+  color: #22223b;
   background-color: #fff;
   width: 60px;
   height: 60px;
@@ -271,7 +264,7 @@ html {
 #menu-close {
   cursor: pointer;
   text-align: right;
-  color: #a43f49;
+  color: #22223b;
   background-color: #fff;
   width: 100%;
   height: 60px;
@@ -699,6 +692,15 @@ section.contact-me {
   display: none;
 }
 
+.remove-nav {
+  transform: translateX(-100%) !important;
+}
+
+.close-nav {
+  -webkit-transform: translateX(-100%) !important;
+  transform: translateX(-100%) !important;
+}
+
 @media screen and (max-width: 845px) {
   #menu-toggle,
   #menu-close {
@@ -707,8 +709,7 @@ section.contact-me {
 
   .menu {
     width: 320px;
-    -webkit-transform: translateX(-100%) !important;
-    transform: translateX(-100%) !important;
+
     transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
     transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
     transition: transform 233ms cubic-bezier(0, 0, 0.21, 1),

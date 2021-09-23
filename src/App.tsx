@@ -1,18 +1,43 @@
+import { useEffect, useState } from 'react';
+import { useWindowSize } from './utils/customHooks';
 import { scrollTo } from './utils/utilityFunctions';
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const size = useWindowSize();
+  const handleNavLink = (section: string) => {
+    scrollTo(section);
+    setOpen(true);
+  };
+
+  useEffect(() => {
+    if (size.height! > 700 && size.width! > 500) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  }, [size]);
+
   return (
     <div className="App">
       <body>
         <div id="page-wraper">
           <div className="responsive-nav">
-            <i className="fa fa-bars" id="menu-toggle"></i>
-            <div id="menu" className="menu">
-              <i className="fa fa-times" id="menu-close"></i>
+            <i
+              className="fa fa-bars"
+              id="menu-toggle"
+              onClick={() => setOpen(false)}
+            ></i>
+            <div id="menu" className={`menu ${open ? 'close-nav' : ''}`}>
+              <i
+                className="fa fa-times"
+                id="menu-close"
+                onClick={() => setOpen(true)}
+              ></i>
               <div className="container">
                 <div className="image">
                   <a href="/">
-                    <img src="assets/images/author-image.jpg" alt="" />
+                    <img src="assets/images/profile.jpeg" alt="" />
                   </a>
                 </div>
                 <div className="author-content">
@@ -22,19 +47,25 @@ function App() {
                 <nav className="main-nav" role="navigation">
                   <ul className="main-menu">
                     <li>
-                      <span onClick={() => scrollTo('about-me')}>About Me</span>
-                    </li>
-                    <li>
-                      <span onClick={() => scrollTo('skills')}>Skills</span>
-                    </li>
-                    <li>
-                      <span onClick={() => scrollTo('my-work')}>My Work</span>
-                    </li>
-                    <li>
-                      <span onClick={() => scrollTo('contact-me')}>
-                        Contact Me
+                      <span onClick={() => handleNavLink('about-me')}>
+                        About Me
                       </span>
                     </li>
+                    <li>
+                      <span onClick={() => handleNavLink('skills')}>
+                        Skills
+                      </span>
+                    </li>
+                    <li>
+                      <span onClick={() => handleNavLink('my-work')}>
+                        My Work
+                      </span>
+                    </li>
+                    {/* <li>
+                      <span onClick={() => handleNavLink('contact-me')}>
+                        Contact Me
+                      </span>
+                    </li> */}
                   </ul>
                 </nav>
                 <div className="social-network">
@@ -50,7 +81,7 @@ function App() {
                     </li>
                     <li>
                       <a
-                        href="https://github.com/andresmarcelo99/"
+                        href="https://gitlab.com/marcelo.garcia0"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -224,7 +255,7 @@ function App() {
             </div>
           </section>
 
-          <section
+          {/* <section
             className="section contact-me"
             data-section="section4"
             id="contact-me"
@@ -293,6 +324,7 @@ function App() {
                               type="submit"
                               id="form-submit"
                               className="button"
+                              onClick={handleSubmit}
                             >
                               Send Message
                             </button>
@@ -304,7 +336,7 @@ function App() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </body>
       <footer></footer>
