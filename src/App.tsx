@@ -7,15 +7,20 @@ function App() {
   const size = useWindowSize();
   const handleNavLink = (section: string) => {
     scrollTo(section);
-    setOpen(true);
+    handleNav();
   };
 
-  useEffect(() => {
+  const handleNav = () => {
     if (size.height! > 700 && size.width! > 500) {
       setOpen(false);
     } else {
       setOpen(true);
     }
+  };
+
+  useEffect(() => {
+    handleNav();
+    // eslint-disable-next-line
   }, [size]);
 
   return (
@@ -61,11 +66,18 @@ function App() {
                         My Work
                       </span>
                     </li>
-                    {/* <li>
-                      <span onClick={() => handleNavLink('contact-me')}>
-                        Contact Me
+                    <li>
+                      <span>
+                        <a
+                          href="/resume.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          download="Marcelo Garcia CV"
+                        >
+                          Download CV
+                        </a>
                       </span>
-                    </li> */}
+                    </li>
                   </ul>
                 </nav>
                 <div className="social-network">
