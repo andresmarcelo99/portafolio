@@ -121,6 +121,7 @@
   .homepage-first-area-right-side {
     width: 100%;
     order: 1;
+    margin-bottom: 75px;
   }
 
   .homepage-image-container {

@@ -1,84 +1,72 @@
 const INFO = {
-	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
-	},
+  main: {
+    title: 'Portafolio by MG',
+    name: 'Marcelo Garcia',
+    email: 'marcelo.andres99.ma@gmail.com',
+    logo: '../logo.png',
+  },
 
-	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
-	},
+  socials: {
+    github: 'https://github.com/andresmarcelo99',
+    linkedin: 'https://linkedin.com/in/marcelo-garcia-01b5a2206/',
+    instagram: 'https://instagram.com/__marceloandres',
+  },
 
-	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
-	},
+  homepage: {
+    title:
+      'Innovative Software Engineer | Crafting Brilliance with React, Angular, and Golang',
+    description:
+      'I am a results-oriented Software Engineer with a comprehensive background in designing and implementing innovative solutions. Proficient in Golang, Cobra framework, and technologies such as Jenkins, Terraform, Angular, JavaScript, TypeScript, and more, I excel in designing scalable infrastructure, automating installation processes, and integrating external services to enhance Command Line Interfaces (CLI). In the past, I have been able to demonstrate my versatility in developing Single Page Applications (SPAs) with ReactJS and Angular, creating APIs following REST standards, and implementing database solutions using Postgresql and Microsoft SQL Server. My portfolio encompasses diverse projects, showcasing my proficiency in software engineering, project planning, and innovative problem-solving. Eager to contribute my skills and experience to drive success in software development endeavors.',
+  },
 
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
+  about: {
+    title: 'I’m Marcelo Garcia I live in Honduras, where I design the future.',
+    description:
+      'I am a dynamic Software Engineer, equipped with a comprehensive skill set that spans the entire software development lifecycle. Proficient in both frontend and backend technologies, I harness the power of React with hooks, Angular, Express, Postgresql, Golang, NestJS, JavaScript, TypeScript, NodeJS, and HTML/CSS to create seamless, responsive, and feature-rich web applications. My proficiency extends to utilizing essential tools such as Docker for containerization, Postgresql for robust databases, AWS services like SES, EC2, and S3 for scalable and secure cloud solutions. I am adept at orchestrating infrastructure with Terraform, ensuring seamless deployment and management. With a keen eye for automation, I leverage Jenkins to streamline continuous integration and delivery processes. My passion lies in creating robust, scalable, and innovative solutions that elevate user experiences and meet the ever-evolving demands of modern web development.',
+  },
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
+  //   articles: {
+  //     title:
+  //       "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+  //     description:
+  //       'Chronological collection of my long-form thoughts on programming, leadership, product design, and more.',
+  //   },
 
-	projects: [
-		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+  projects: [
+    {
+      title: 'OTA',
+      description:
+        'Achieve reliable, automated deployment of your latest applications during all stages of your continuous development, deployment, and operation lifecycles.',
+      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go/go.png',
+      linkText: 'View Project',
+      link: 'https://www.windriver.com/studio/operate/over-the-air-updates',
+    },
+    {
+      title: 'IBM Price Transparecy',
+      description:
+        'A healthcare price transparency solution application is designed to provide clear and accessible information about the costs associated with healthcare services, procedures, and medical treatments.',
+      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
+      linkText: 'View Project',
+      link: 'https://www.ibmpricetransparency.com/330399',
+    },
+    {
+      title: 'Peeplo',
+      description:
+        'This integrated tool serves both employees and employers by providing efficient timekeeping functionalities and facilitating seamless payroll processes.',
+      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
+      linkText: 'View Project',
+      link: 'https://app.peeplo.io',
+    },
 
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-	],
+    {
+      title: 'Raisify',
+      description:
+        'A gamifying fundraising competition for diversity entrepreneurs is a platform designed to inject an element of gamification into the fundraising process for businesses led by individuals from diverse backgrounds.',
+      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
+      linkText: 'View Project',
+      link: 'https://raisify.co',
+    },
+  ],
 };
 
 export default INFO;
