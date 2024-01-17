@@ -14,7 +14,7 @@ const INFO = {
 
   homepage: {
     title:
-      'Innovative Software Engineer | Crafting Brilliance with React, Angular, and Golang',
+      'Innovative Software Engineer | Crafting Brilliance with React, Angular, Node, and Golang',
     description:
       'I am a results-oriented Software Engineer with a comprehensive background in designing and implementing innovative solutions. Proficient in Golang, Cobra framework, and technologies such as Jenkins, Terraform, Angular, JavaScript, TypeScript, and more, I excel in designing scalable infrastructure, automating installation processes, and integrating external services to enhance Command Line Interfaces (CLI). In the past, I have been able to demonstrate my versatility in developing Single Page Applications (SPAs) with ReactJS and Angular, creating APIs following REST standards, and implementing database solutions using Postgresql and Microsoft SQL Server. My portfolio encompasses diverse projects, showcasing my proficiency in software engineering, project planning, and innovative problem-solving. Eager to contribute my skills and experience to drive success in software development endeavors.',
   },
