@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -8,6 +8,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import INFO from '../../data/user';
+
+import CV from './cv.pdf';
 
 import './styles/socials.css';
 
@@ -41,6 +43,17 @@ const Socials = () => {
         </a>
       </div>
 
+      <div className="cv">
+        <div className="email-wrapper">
+          <a href={CV} download={true}>
+            <div className="social-icon">
+              <FontAwesomeIcon icon={faDownload} />
+            </div>
+
+            <div className="social-text">Download CV</div>
+          </a>
+        </div>
+      </div>
       <div className="email">
         <div className="email-wrapper">
           <a
