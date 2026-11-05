@@ -1,14 +1,37 @@
 :root {
 	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
+	--mist: #f7f7f5;
+	--surface: #ebecea;
+	--pine: #141714;
+	--ink-2: #5c625e;
+	--faint: #dfe2de;
+	--canopy: #2a7a4b;
+	--canopy-strong: #1d5c37;
+	--bark: #8a7259;
+	--fern: #9fd3ad;
+	--line: #e2e4e0;
 	/* ---------------------- */
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
+	/* ------- type ------- */
+	--font: "Poppins", system-ui, -apple-system, sans-serif;
+	--step-0: 16px;
+	--step-1: 19px;
+	--step-2: clamp(44px, 7vw, 96px);
+	--step-3: clamp(56px, 9vw, 120px);
 	/* --------------------- */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--mist: #0f1311;
+		--surface: #181d1a;
+		--pine: #eef1ee;
+		--ink-2: #9aa39d;
+		--faint: #252c28;
+		--canopy: #7fcf98;
+		--canopy-strong: #a6e0b8;
+		--bark: #b9a083;
+		--fern: #2f6a45;
+		--line: #222925;
+	}
 }

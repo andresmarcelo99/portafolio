@@ -1,37 +1,40 @@
+const KEYWORDS = [
+	"Marcelo Garcia",
+	"Software Engineer",
+	"Go",
+	"React",
+	"TypeScript",
+	"Honduras",
+	"Remote",
+];
+
 const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Marcelo Garcia, Senior Software Engineer in Honduras (UTC-6). Go backends and the React/TypeScript interfaces on top, remote on US-based teams.",
+		keywords: KEYWORDS,
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"About Marcelo Garcia: 6 years building Go, .NET and NestJS services and React/TypeScript applications, fully remote.",
+		keywords: KEYWORDS,
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Projects by Marcelo Garcia: a Database-as-a-Service platform in Go, its React console, an order service in .NET 8 and a published npm CLI.",
+		keywords: KEYWORDS,
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Contact Marcelo Garcia by email or LinkedIn.",
+		keywords: KEYWORDS,
 	},
 ];
 

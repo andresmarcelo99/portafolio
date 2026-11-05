@@ -1,34 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 import './styles/project.css';
 
 const Project = (props) => {
-  const { logo, title, description, linkText, link } = props;
+  const { number, title, description, stack, linkText, link } = props;
 
   return (
-    <React.Fragment>
-      <div className="project">
-        <Link to={link}>
-          <div className="project-container">
-            <div className="project-logo">
-              <img src={logo} alt="logo" />
-            </div>
-            <div className="project-title">{title}</div>
-            <div className="project-description">{description}</div>
-            <div className="project-link">
-              <div className="project-link-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </div>
-
-              <div className="project-link-text">{linkText}</div>
-            </div>
+    <li className="project">
+      <span className="project-number" aria-hidden="true">
+        {number}
+      </span>
+      <h3 className="project-title">{title}</h3>
+      <dl className="project-details">
+        <div>
+          <dt>summary</dt>
+          <dd>{description}</dd>
+        </div>
+        <div>
+          <dt>stack</dt>
+          <dd>{stack}</dd>
+        </div>
+        {link && (
+          <div>
+            <dt>link</dt>
+            <dd>
+              <a href={link} target="_blank" rel="noreferrer">
+                {linkText}
+              </a>
+            </dd>
           </div>
-        </Link>
-      </div>
-    </React.Fragment>
+        )}
+      </dl>
+    </li>
   );
 };
 

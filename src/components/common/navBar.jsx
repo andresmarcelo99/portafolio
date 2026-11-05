@@ -1,46 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import INFO from '../../data/user';
+
 import './styles/navBar.css';
+
+const LINKS = [
+  { key: 'home', to: '/', label: 'Home' },
+  { key: 'about', to: '/about', label: 'About' },
+  { key: 'projects', to: '/projects', label: 'Work' },
+  { key: 'contact', to: '/contact', label: 'Contact' },
+];
 
 const NavBar = (props) => {
   const { active } = props;
 
   return (
-    <React.Fragment>
-      <div className="nav-container">
-        <nav className="navbar">
-          <div className="nav-background">
-            <ul className="nav-list">
-              <li
-                className={active === 'home' ? 'nav-item active' : 'nav-item'}
+    <header className="nav-container">
+      <nav className="navbar" aria-label="Main">
+        <Link to="/" className="nav-brand">
+          <span>{INFO.main.name}</span>
+        </Link>
+        <ul className="nav-list">
+          {LINKS.map((link) => (
+            <li
+              key={link.key}
+              className={active === link.key ? 'nav-item active' : 'nav-item'}
+            >
+              <Link
+                to={link.to}
+                aria-current={active === link.key ? 'page' : undefined}
               >
-                <Link to="/">Home</Link>
-              </li>
-              <li
-                className={active === 'about' ? 'nav-item active' : 'nav-item'}
-              >
-                <Link to="/about">About</Link>
-              </li>
-              <li
-                className={
-                  active === 'projects' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link to="/projects">Projects</Link>
-              </li>
-              <li
-                className={
-                  active === 'contact' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </React.Fragment>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 };
 

@@ -1,0 +1,31 @@
+.contact-list {
+  margin: 0;
+}
+
+.contact-list div {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  padding: 6px 0;
+}
+
+.contact-list dt {
+  color: var(--pine);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.9;
+}
+
+.contact-list dt::before {
+  content: '.';
+  content: '.' / '';
+  color: var(--canopy);
+}
+
+.contact-list dd {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}

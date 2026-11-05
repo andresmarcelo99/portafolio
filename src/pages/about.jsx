@@ -1,82 +1,96 @@
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import Socials from "../components/about/socials";
+import NavBar from '../components/common/navBar';
+import Footer from '../components/common/footer';
+import ContactList from '../components/about/contactList';
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
+import INFO from '../data/user';
+import SEO from '../data/seo';
 
-import "./styles/about.css";
+import './styles/about.css';
 
 const About = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-	const currentSEO = SEO.find((item) => item.page === "about");
+  const currentSEO = SEO.find((item) => item.page === 'about');
 
-	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
+  return (
+    <React.Fragment>
+      <Helmet>
+        <title>{`About | ${INFO.main.title}`}</title>
+        <meta name="description" content={currentSEO.description} />
+        <meta name="keywords" content={currentSEO.keywords.join(', ')} />
+      </Helmet>
 
-			<div className="page-content">
-				<NavBar active="about" />
-				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
+      <div className="page-content">
+        <NavBar active="about" />
+        <main className="content-wrapper">
+          <section className="page-intro">
+            <h1 className="display title">About</h1>
+          </section>
 
-					<div className="about-container">
-						<div className="about-main">
-							<div className="about-right-side">
-								<div className="title about-title">
-									{INFO.about.title}
-								</div>
+          <div className="about-spread">
+            <div className="about-column">
+              <section className="about-block">
+                <h2 className="label">about me</h2>
+                {INFO.about.description.map((paragraph, index) => (
+                  <p className="subtitle" key={index}>
+                    {paragraph}
+                  </p>
+                ))}
+              </section>
+              <section className="about-block">
+                <h2 className="label">contact</h2>
+                <ContactList />
+              </section>
+            </div>
 
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
-								</div>
-							</div>
+            <div className="about-column">
+              <section className="about-block">
+                <h2 className="label">work experience</h2>
+                <dl className="about-rows">
+                  {INFO.about.experience.map((job) => (
+                    <div key={job.company}>
+                      <dt>{job.years}</dt>
+                      <dd>
+                        <strong>{job.company}</strong>
+                        <br />
+                        {job.role}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+              <section className="about-block">
+                <h2 className="label">expertise</h2>
+                <ul className="about-skills">
+                  {INFO.about.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </section>
+              <section className="about-block">
+                <h2 className="label">languages</h2>
+                <dl className="about-rows">
+                  {INFO.about.languages.map((language) => (
+                    <div key={language.name}>
+                      <dt>{language.name}</dt>
+                      <dd>{language.level}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            </div>
+          </div>
 
-							<div className="about-left-side">
-								<div className="about-image-container">
-									<div className="about-image-wrapper">
-										<img
-											src="about.jpg"
-											alt="about"
-											className="about-image"
-										/>
-									</div>
-								</div>
-
-								<div className="about-socials">
-									<Socials />
-								</div>
-							</div>
-						</div>
-						<div className="about-socials-mobile">
-							<Socials />
-						</div>
-					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
-			</div>
-		</React.Fragment>
-	);
+          <Footer />
+        </main>
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default About;

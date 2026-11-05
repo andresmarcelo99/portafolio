@@ -1,70 +1,97 @@
 const INFO = {
   main: {
-    title: 'Portafolio by MG',
+    title: 'Marcelo Garcia, Software Engineer',
     name: 'Marcelo Garcia',
-    email: 'marcelo.andres99.ma@gmail.com',
-    logo: '../logo.png',
+    email: 'mg.andres.ga@gmail.com',
+    logo: '/logo.svg',
   },
 
   socials: {
     github: 'https://github.com/andresmarcelo99',
     linkedin: 'https://linkedin.com/in/marcelo-garcia-01b5a2206/',
-    instagram: 'https://instagram.com/__marceloandres',
   },
 
   homepage: {
-    title:
-      'Innovative Software Engineer | Crafting Brilliance with React, Angular, Node, and Golang',
+    lead: 'Software engineer in Honduras. I build Go backends and the React and TypeScript screens on top of them.',
     description:
-      'I am a results-oriented Software Engineer with a comprehensive background in designing and implementing innovative solutions. Proficient in Golang, Cobra framework, and technologies such as Jenkins, Terraform, Angular, JavaScript, TypeScript, and more, I excel in designing scalable infrastructure, automating installation processes, and integrating external services to enhance Command Line Interfaces (CLI). In the past, I have been able to demonstrate my versatility in developing Single Page Applications (SPAs) with ReactJS and Angular, creating APIs following REST standards, and implementing database solutions using Postgresql and Microsoft SQL Server. My portfolio encompasses diverse projects, showcasing my proficiency in software engineering, project planning, and innovative problem-solving. Eager to contribute my skills and experience to drive success in software development endeavors.',
+      'Six years across stacks, remote on US-based teams. Lately: provisioning, live resizing and quota features on a multi-tenant Database-as-a-Service platform, the database screens in its React console, and an event-driven order service on AWS.',
   },
 
   about: {
-    title: 'I’m Marcelo Garcia I live in Honduras, where I design the future.',
-    description:
-      'I am a dynamic Software Engineer, equipped with a comprehensive skill set that spans the entire software development lifecycle. Proficient in both frontend and backend technologies, I harness the power of React with hooks, Angular, Express, Postgresql, Golang, NestJS, JavaScript, TypeScript, NodeJS, and HTML/CSS to create seamless, responsive, and feature-rich web applications. My proficiency extends to utilizing essential tools such as Docker for containerization, Postgresql for robust databases, AWS services like SES, EC2, and S3 for scalable and secure cloud solutions. I am adept at orchestrating infrastructure with Terraform, ensuring seamless deployment and management. With a keen eye for automation, I leverage Jenkins to streamline continuous integration and delivery processes. My passion lies in creating robust, scalable, and innovative solutions that elevate user experiences and meet the ever-evolving demands of modern web development.',
+    description: [
+      'Since 2022 I have been a Senior Software Engineer at Number8. On a multi-tenant Database-as-a-Service platform I built Go features (the engine translation layer that turns one cluster spec into a PostgreSQL or MySQL cluster, live flavor and volume resizing, multi-tenant resource quotas) and designed its integration test framework. On the same platform I built the database screens of a React/TypeScript console: backup and restore, password management, Grafana metrics and RBAC-driven UI.',
+      'I also built an order management service in .NET 8 with CQRS, queue-driven workers and four levels of automated tests, running on AWS.',
+      'Before that, at Acklen Avenue, I built React, TypeScript and Redux applications and NestJS APIs over PostgreSQL, held 80%+ automated test coverage, and reviewed code and mentored junior developers.',
+      'I work fully remote from Honduras, on US Central time. Spanish is my native language and my English is proficient.',
+    ],
+    experience: [
+      {
+        company: 'Number8',
+        role: 'Senior Software Engineer',
+        years: '2022 to now',
+      },
+      {
+        company: 'Acklen Avenue',
+        role: 'Software Engineer',
+        years: '2020 to 2022',
+      },
+    ],
+    skills: [
+      'Go',
+      'React',
+      'TypeScript',
+      'Node.js and NestJS',
+      '.NET 8 and C#',
+      'PostgreSQL and MySQL',
+      'MongoDB',
+      'AWS',
+      'Docker',
+      'Automated testing',
+    ],
+    languages: [
+      { name: 'Spanish', level: 'native' },
+      { name: 'English', level: 'proficient' },
+    ],
   },
-
-  //   articles: {
-  //     title:
-  //       "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-  //     description:
-  //       'Chronological collection of my long-form thoughts on programming, leadership, product design, and more.',
-  //   },
 
   projects: [
     {
-      title: 'OTA',
+      title: 'Database-as-a-Service platform',
       description:
-        'Achieve reliable, automated deployment of your latest applications during all stages of your continuous development, deployment, and operation lifecycles.',
-      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go/go.png',
-      linkText: 'View Project',
-      link: 'https://www.windriver.com/studio/operate/over-the-air-updates',
+        'Go features on a multi-tenant platform: the engine translation layer from one cluster spec to PostgreSQL or MySQL, instance create, update and delete, live flavor and volume resizing, resource quotas, and the integration test framework.',
+      stack: 'Go, PostgreSQL, MySQL, Docker',
     },
     {
-      title: 'IBM Price Transparecy',
+      title: 'DBaaS web console',
       description:
-        'A healthcare price transparency solution application is designed to provide clear and accessible information about the costs associated with healthcare services, procedures, and medical treatments.',
-      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
-      linkText: 'View Project',
-      link: 'https://www.ibmpricetransparency.com/330399',
+        'Database screens in a React console: flavor and limits views, backup and restore flows, password management, Grafana metrics and RBAC-driven UI, shipped behind feature flags.',
+      stack: 'React, TypeScript',
     },
     {
-      title: 'Peeplo',
+      title: 'Order management service',
       description:
-        'This integrated tool serves both employees and employers by providing efficient timekeeping functionalities and facilitating seamless payroll processes.',
-      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
-      linkText: 'View Project',
-      link: 'https://app.peeplo.io',
+        'A REST API with CQRS and two worker hosts over MongoDB, integrating Shopify webhooks through SQS, with Keycloak OIDC and tests at four levels.',
+      stack: '.NET 8, C#, MongoDB, AWS ECS Fargate, SQS',
     },
-
     {
-      title: 'Raisify',
+      title: 'OTA update platform',
       description:
-        'A gamifying fundraising competition for diversity entrepreneurs is a platform designed to inject an element of gamification into the fundraising process for businesses led by individuals from diverse backgrounds.',
-      logo: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png',
-      linkText: 'View Project',
-      link: 'https://raisify.co',
+        'Designed and built the REST API in Go for an over-the-air update system, took part in its microservice architecture design, and built dashboards for admins and end users to monitor OTA operations and device status.',
+      stack: 'Go, REST APIs, React, TypeScript, Docker',
+    },
+    {
+      title: 'Healthcare pricing application',
+      description:
+        'A single-page application that shows the prices of medical procedures.',
+      stack: 'React, TypeScript, Redux',
+    },
+    {
+      title: 'Full Stack Template Generator',
+      description:
+        'My own published npm CLI that scaffolds a React and NestJS full-stack application.',
+      stack: 'JavaScript, Node.js',
+      linkText: 'View it on npm',
+      link: 'https://www.npmjs.com/package/@marcelogarcia/mg-project-cli',
     },
   ],
 };

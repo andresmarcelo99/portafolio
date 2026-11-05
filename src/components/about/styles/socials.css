@@ -1,36 +1,30 @@
-@import "../../../data/styles.css";
-.social,
-.email-wrapper {
-	display: flex;
-	padding-bottom: 20px;
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
 }
 
-.social a,
-.email-wrapper a {
-	text-decoration: none;
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--pine);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: lowercase;
+  text-decoration: underline;
+  text-decoration-color: var(--canopy);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
-.social-icon {
-	font-size: 15px;
-	color: var(--secondary-color);
+.socials a::before {
+  content: '.';
+  content: '.' / '';
+  color: var(--canopy);
 }
 
-.social-text {
-	color: var(--secondary-color);
-	padding-left: 30px;
-	margin-top: -20px;
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.email::before {
-	content: "";
-	display: block;
-	padding-top: 20px;
-	border-top: 3px solid #f4f4f5;
-	margin-top: 20px;
-}
-
-.email-wrapper {
-	padding-top: 20px;
+.socials a:hover {
+  color: var(--canopy);
 }

@@ -1,39 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import INFO from '../../data/user';
 
 import './styles/footer.css';
 
 const Footer = () => {
   return (
-    <React.Fragment>
-      <div className="footer">
-        <div className="footer-links">
-          <ul className="footer-nav-link-list">
-            <li className="footer-nav-link-item">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="footer-nav-link-item">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="footer-nav-link-item">
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li className="footer-nav-link-item">
-              <Link to="/articles">Articles</Link>
-            </li>
-            <li className="footer-nav-link-item">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="footer-credits">
-          <div className="footer-credits-text">
-            © 2024 mg-portafolio.netlify.app All Rights Reserved.
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
+    <footer className="footer meta">
+      <span>
+        © {new Date().getFullYear()} {INFO.main.name}
+      </span>
+      <span>Honduras, UTC-6</span>
+    </footer>
   );
 };
 
